@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="icon" href="static/logo.png" type="image/x-icon">
+    			<style>
+			.v-link-active {
+    color: red;
+}
+.foo{
+	width: 300px;
+	height: 200px;
+	background: red;
+	color: #fff;
+	 animation: bounce-in .5s;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bar-transition{
+	height: 300px;
+	width: 200px;
+	position: absolute;
+	background-color: #eee;
+}
+
+.bar-enter
+{
+	animation: inpage .5s;
+}
+.bar-leave{
+	animation: outpage .5s linear;
+}
+@keyframes inpage {
+  0% {
+    left:-400px
+  }
+  
+  to {
+    left:-0px
+  }
+}
+@keyframes outpage {
+  0% {
+    left:0px
+  }
+  to {
+    left:-400px
+  }
+}
+
+
+		</style>
+  </head>
+  <body>
+    <div id="app">
+    <script src="static/build.js"></script>
+  </body>
+</html>

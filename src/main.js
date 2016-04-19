@@ -1,0 +1,24 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+import App from './compentent/App.vue'
+import Bar from './compentent/Bar.vue'
+import Foo from './compentent/Foo.vue'
+
+Vue.use(Router)
+
+var router=new Router()
+
+
+router.map({
+	'/foo':{
+  		component:Foo
+  	},
+  	'/bar':{
+  		component:Bar
+  	}
+})
+
+
+	router.start(App,'#app');
+	
+
